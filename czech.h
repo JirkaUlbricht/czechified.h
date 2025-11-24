@@ -1,232 +1,116 @@
-/*
-   ▀█▄▄█▀
-    ▄▄▄▄
-  ██▀▀▀▀█
- ██▀
- ██
- ██▄
-  ██▄▄▄▄█
-    ▀▀▀▀
-*/
-// typy
-#define SOUBOR FILE
-#define plav float
-#define plov float
-#define plovoucí float
-#define vznášej float
-#define dvojnásobný double
-#define dvojnásobná double
-#define dvojnásobné double
-#define dvojitý double
-#define dvojitá double
-#define dvojité double
-#define číslo int
-#define cel int // INTeger -> CELé číslo
-#define znak char
-#define dlouhý long
-#define dlouhá long
-#define dlouhé long
-#define krátký short
-#define krátká short
-#define krátké short
-#define znaménkový signed
-#define znaménková signed
-#define znaménkové signed
-#define bezznaménkový unsigned
-#define bezznaménková unsigned
-#define bezznaménkové unsigned
-#define neznaménkový unsigned
-#define neznaménková unsigned
-#define neznaménkové unsigned
-#define prázdno void
-#define prázdný void
-#define prázdná void
-#define prázdné void
-#define nijaký void
-#define nijaká void
-#define nijaké void
-#define prázdnota void
-#define pravdivost bool
+
+// Vše co se vyslovuje tak jak se to píše zůstává beze změny
+
+// Typy
+#define FAJL FILE
+#define flout float
+#define dabl double
+#define intýžr int
+#define šort short
+#define sajnd signed
+#define ansajnd unsigned
+#define vojd void
+#define bůl bool
 
 // pokročilé celočíselné typy
-#define velikost_t size_t
-#define číslo8_t int8_t
-#define číslo16_t int16_t
-#define číslo32_t int32_t
-#define číslo64_t int64_t
-#define nčíslo8_t uint8_t
-#define nčíslo16_t uint16_t
-#define nčíslo32_t uint32_t
-#define nčíslo64_t uint64_t
-#define cel8_t int8_t
-#define cel16_t int16_t
-#define cel32_t int32_t
-#define cel64_t int64_t
-#define ncel8_t uint8_t
-#define ncel16_t uint16_t
-#define ncel32_t uint32_t
-#define ncel64_t uint64_t
+#define sajz_t size_t
+#define intýžr8_t int8_t
+#define intýžr16_t int16_t
+#define intýžr32_t int32_t
+#define intýžr64_t int64_t
+#define nintýžr8_t uint8_t
+#define nintýžr16_t uint16_t
+#define nintýžr32_t uint32_t
+#define nintýžr64_t uint64_t
 
 // další datové typy
-#define výčet enum
-#define vyčis enum
-#define vyčíslení enum
-#define strukt struct
-#define struktura struct
-#define svaz union
-#define sdružení union
+#define ínam enum
+#define strakt struct
+#define junijn union
 
 // paměťové třídy
-#define stálý static
-#define stálá static
-#define stálé static
-#define rejstřík register
-#define vnější extern
-#define samočinný auto
-#define samočinná auto
-#define samočinné auto
-#define automatický auto
-#define automatická auto
-#define automatické auto
-#define automobil auto
-#define samoodvozený auto
-#define samoodvozená auto
-#define samoodvozené auto
+#define stetik static
+#define redžistr register
+#define extrn extern
 
 // kvalifikátory typu
 #define konst const
-#define konstantní const
-#define neměnný const
-#define neměnná const
-#define neměnné const
-#define nestálý volatile
-#define nestálá volatile
-#define nestálé volatile
+#define voletajl volatile
+
 // C99 kvalifikátory
-#define omezený restrict
-#define omezená restrict
-#define omezené restrict
+#define restrikt restrict
 
 // logické konstrukce
-#define když if
-#define pokud if
-#define jestli if
-#define jestliže if
-#define jinak else
-#define dokud while
-#define zatímco while
-#define pro for
-#define dělej do
-#define udělej do
-#define proveď do
-#define přepínač switch
-#define případ case
-#define výchozí default
-#define rozbij break
-#define rozbít break
-#define přeruš break
-#define přerušit break
-#define pokračuj continue
+#define els else
+#define wajl while
+#define dů do
+#define svič switch
+#define kejs case
+#define defolt default
+#define dýfolt default
+#define brejk break
+#define kontiňjů continue
 
 // ostatní klíčová slova
-#define vrať return
-#define navrať return
-#define jdido goto
-#define velikost(x) sizeof(x)
-#define definujtyp typedef
-#define definicetypu typedef
-#define středník ;
-#define stop ;
-#define vole ;
+#define retrn return
+#define goutů goto
+#define sajzof(x) sizeof(x)
+#define tajpdef typedef
+#define semikouln ;
 
 #define hlavní main
 
 // operátory
-#define je ==
-#define rovný ==
-#define rovná ==
-#define rovné ==
-#define rovno ==
-#define rovnáse ==
-#define není !=
-#define nerovný !=
-#define nerovná !=
-#define nerovné !=
-#define nerovno !=
-#define nerovnáse !=
-#define je_menší <
-#define je_menší_nebo_rovno <=
-#define je_větší >
-#define je_větší_nebo_rovno >=
-#define nebo ||
-#define a &&
-#define rovná_se =
+#define íkvls ==
+#define notíkvls !=
+#define smóler_den <
+#define smóler_den_or_íkvls <=
+#define lárdžr_den >
+#define lárdžr_den_or_íkvls >=
+#define ór ||
+#define ent &&
+#define íkvls_tu = // Musel jsem to nějak rozlišit == a = od sebe
 
 // experimentální triky
-#define začátek {
-#define začni {
-#define konec }
-#define skonči }
-#define chlupatá_závorka {
-#define chlupatá_zavírací_závorka }
-#define kulatý_začátek (
-#define začni_kulatě (
-#define kulatý_konec )
-#define skonči_kulatě )
-#define závorka (
-#define zavírací_závorka )
-
-#define major *
-#define podplukovník **
-#define plukovník ***
-#define brigádní_generál *
-#define generálmajor **
-#define generálporučík ***
-#define armádní_generál ****
+#define oupening_krly_brekt {
+#define klousing_krly_brekt }
+#define oupening_raund_brekt (
+#define klousing_raund_brekt )
 
 // režimy otevření souboru
-#define ČTENÍ "r"
-#define ZÁPIS "w"
-#define PŘÍPIS "a"
-#define DVOJKOVÉ_ČTENÍ "rb"
-#define DVOJKOVÝ_ZÁPIS "wb"
-#define DVOJKOVÝ_PŘÍPIS "wa"
+#define RÍD "r"
+#define WRAJT "w"
+#define EDIŠN "a"
+#define DABL_RÍD "rb"
+#define DABL_WRAJT "wb"
+#define DABL_EDIŠN "wa"
 
 // standardní I/O streamy
-#define standovnitř stdin
-#define stanvstup stdin
-#define stando stdin
-#define stanvýstup stdout
-#define stanven stdout
-#define stanchyb stderr
-
-#define stídovnitř stdin
-#define stívstup stdin
-#define stído stdin
-#define stívýstup stdout
-#define stíven stdout
-#define stíchyb stderr
+#define estýdýin stdin
+#define estýdýaut stdout
+#define estýdýerr stderr
 
 // konstanty
-#define pravda 1
-#define vcajku 1
-#define blbě 0
-#define nepravda 0
-#define lež 0
-#define KŘ '\n'
-#define KS -1 //Konec Souboru
-#define NULA NULL
+#define uan 1
+#define van 1 // Nevím ja to přesně zapsat tak jsem tu nechal 2 možnosti
+#define zirou 0
+#define sleš_en '\n'
+#define ENDOFFAJL -1 //Konec Souboru
+#define NALL NULL
 
 // Knihovny
 
 // <time.h> - <čas.h>
-#define čas(x) time(x)
+#define tajm(x) time(x)
 
 // <stdio.h> - <spnvv.h>
-#define smaž(x) remove(x)
-#define přejmenuj(x, y) rename(x, y)
-#define dočsoubor() tmpfile()
-#define dočjmén(x) tmpnam(x)
+#define rimův(x) remove(x)
+#define rinejm(x, y) rename(x, y)
+#define týempífajl() tmpfile()
+#define týempínem(x) tmpnam(x)
+
+// TODO: Dokončit zbytek
+
 #define szavři(x) fclose(x)
 #define sspláchni(x) fflush(x)
 #define sotevři(x, y) fopen(x, y)
@@ -244,7 +128,7 @@
 #define znpřiděl(x, y) realloc(x, y) // znovu paměť přiděl
 #define osvoboď(x) free(x)
 
-#define řnač(x) atoi(x) // řetězec na číslo
+#define řnač(x) atoi(x) // řetězec na intýžr
 #define řdoč(x) atoi(x)
 #define řnap(x) atof(x) // řetězec na plav
 #define řdop(x) atof(x)
@@ -415,7 +299,7 @@
 #define jemenší(x, y) isless(x, y)
 #define jemenšírovno(x, y) islessequal(x, y)
 #define jemenšívětší(x, y) islessgreater(x, y)
-#define jenečíslo(x) isnan(x)
+#define jeneintýžr(x) isnan(x)
 #define jenormální(x) isnormal(x)
 #define jeneřaditelné(x, y) isunordered(x, y)
 #define znaménkovýbit(x) signbit(x)
@@ -428,9 +312,9 @@
 #define OBŘÍ_HODP HUGE_VALF
 #define OBŘÍ_HODD HUGE_VALL
 #define NEKONEČNO INFINITY
-#define NEČÍSLO NAN
+#define NEINTÝŽR NAN
 #define PČ_NEKONEČNÉ FP_INFINITE
-#define PČ_NEČÍSLO FP_NAN
+#define PČ_NEINTÝŽR FP_NAN
 #define PČ_NORMÁLNÍ FP_NORMAL
 #define PČ_PODNORMÁLNÍ FP_SUBNORMAL
 #define PČ_NULA FP_ZERO
@@ -438,7 +322,7 @@
 #define PČ_RYCHLÁ_PRSP FP_FAST_FMAF
 #define PČ_RYCHLÁ_PRSD FP_FAST_FMAL
 #define PČ_ČLOGD0 FP_ILOGB0
-#define PČ_ČLOGDNEČÍSLO FP_ILOGBNAN
+#define PČ_ČLOGDNEINTÝŽR FP_ILOGBNAN
 #define MATIKA_CHYBČÍS MATH_ERRNO
 #define MATIKA_CHYBCHYBA MATH_ERREXCEPT
 #define matika_chybzpracování math_errhandling
