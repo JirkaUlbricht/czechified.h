@@ -1,34 +1,30 @@
-# Č (Čéčko) / Č++ (Čépépé)
+# Czechified C
 
-The czech library for C (and C++). Why? Because we could, of course!
+Czechified library for the C language based on czech.h by Toaster192
 
-Please contribute your other ~~horrible~~ awesome and creative translations
-so that we can write a fully czech code to suit all our needs.
+## Usage
 
-## Using
-
-This project resides solely in a single header file, aptly named `czech.h`.
+This project resides solely in a single header file, aptly named `czechified.h`.
 Download that file alone, or along this whole repository, and then, after
 including it in your source files like you would with any other header, you
 will be fully set up! (Just make sure you use relatively modern compiler)
 
-We have this project tested and provably working with
-[Clang](http://releases.llvm.org/download.html), but newer versions of gcc
-are also known to work, as well as some other compilers.
+## Compiler support
 
-## Integrated transpiler
-For testing, we also provide C to Č and reverse transpiler in the file
-`translate.py`. Launch it with `./translate.py to czech.h path/to/your/C/file.c path/to/new/Č/file.č`
+We have this project tested and provably working with
+[Clang](http://releases.llvm.org/download.html)
+Newer versions of gcc are also known to work, as well as some other compilers
 
 ## Obligatory "Hello World" example
 
 ```c
-#include "czech.h"
+#include "czechified.h"
 #include <stdio.h>
 
-číslo hlavní(prázdno)
-{
-    položř("Ahoj, světe!");
-    vrať 0;
+intýžr mejn() {
+    printef("Helou world!");
+
+    retrn zirou;
 }
+
 ```
