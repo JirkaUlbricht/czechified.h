@@ -1,4 +1,7 @@
 
+#ifndef CZECHIFIED_H
+#define CZECHIFIED_H
+
 // Vše co se vyslovuje tak jak se to píše zůstává beze změny
 
 // Typy
@@ -109,64 +112,46 @@
 #define týempífajl() tmpfile()
 #define týempínem(x) tmpnam(x)
 
-// TODO: Dokončit zbytek
-
-#define szavři(x) fclose(x)
-#define sspláchni(x) fflush(x)
-#define sotevři(x, y) fopen(x, y)
-#define sznovuotevři(x, y, z) freopen(x, y, z)
-#define nastavmísto(x, y) setbuf(x, y)
-#define přenastavmísto(x, y, z, a) setvbuf(x, y, z, a)
-#define stisknif(...) fprintf(__VA_ARGS__)
-#define sčtif(...) fscanf(__VA_ARGS__)
-#define tisknif(...) printf(__VA_ARGS__)
-#define čtif(...) scanf(__VA_ARGS__)
+#define efklous(x) fclose(x)
+#define efflaš(x) fflush(x)
+#define efoupn(x, y) fopen(x, y)
+#define efryoupn(x, y, z) freopen(x, y, z)
+#define setbaf(x, y) setbuf(x, y)
+#define setvíbaf(x, y, z, a) setvbuf(x, y, z, a)
+#define efprintef(...) fprintf(__VA_ARGS__)
+#define efskenef(...) fscanf(__VA_ARGS__)
+#define printef(...) printf(__VA_ARGS__)
+#define skenef(...) scanf(__VA_ARGS__)
 
 // <stdlib.h> - <spnkni.h>
-#define ppřiděl(x) malloc(x) // paměť přiděl
-#define čpřiděl(x, y) calloc(x, y) // čistou paměť přiděl
-#define znpřiděl(x, y) realloc(x, y) // znovu paměť přiděl
-#define osvoboď(x) free(x)
+#define malok(x) malloc(x) // paměť přiděl
+#define kalok(x, y) calloc(x, y) // čistou paměť přiděl
+#define rýalok(x, y) realloc(x, y) // znovu paměť přiděl
+#define frý(x) free(x)
 
-#define řnač(x) atoi(x) // řetězec na intýžr
-#define řdoč(x) atoi(x)
-#define řnap(x) atof(x) // řetězec na plav
-#define řdop(x) atof(x)
-#define řnad(x) atol(x) // řetězec na dlouhý
-#define řdod(x) atol(x)
-#define řnadd(x) atoll(x) // řetězec na dlouhý dlouhý
-#define řdodd(x) atoll(x)
+#define atoj(x) atoi(x) // řetězec na intýžr
 
-#define řeťnad(x, y, z) strtol(x, y, z) // řetězec na dlouhý
-#define řeťdod(x, y, z) strtol(x, y, z)
-#define řeťnadd(x, y, z) strtoll(x, y, z) // řetězec na dlouhý dlouhý
-#define řeťdodd(x, y, z) strtoll(x, y, z)
-
-#define řeťnand(x, y, z) strtoul(x, y, z) // řetězec na neznaménkový dlouhý
-#define řeťdond(x, y, z) strtoul(x, y, z)
-#define řeťnandd(x, y, z) strtoull(x, y, z) // řetězec na neznaménkový dlouhý dlouhý
-#define řeťdondd(x, y, z) strtoull(x, y, z)
-
-#define náho() rand()
+#define rend() rand()
 // semeno náhody
-#define snáho(x) srand(x)
-#define rseřaď(x, y, z, a) qsort(x, y, z, a)
-#define konec(x) exit(x)
-#define odejít(x) exit(x)
+#define srend(x) srand(x)
+#define kjůsort(x, y, z, a) qsort(x, y, z, a)
+#define eksit(x) exit(x)
 
 // místo délka tisk formát
-#define mdtisknif(...) snprintf(__VA_ARGS__)
-#define mtisknif(...) sprintf(__VA_ARGS__)
-#define mčtif(...) sscanf(__VA_ARGS__)
+#define esprintef(...) snprintf(__VA_ARGS__)
+#define esskenef(...) sscanf(__VA_ARGS__)
 // proměnný souborový tisk formátovaný
-#define pstisknif(...) vfprintf(__VA_ARGS__)
-#define psčtif(...) vfscanf(__VA_ARGS__)
-#define ptisknif(...) vprintf(__VA_ARGS__)
-#define pčtif(...) vscanf(__VA_ARGS__)
-#define pmdtisknif(...) vsnprintf(__VA_ARGS__)
-#define pmtisknif(...) vsprintf(__VA_ARGS__)
-#define pmčtif(...) vsscanf(__VA_ARGS__)
-#define sdostaňz(x) fgetc(x)
+#define efprintef(...) vfprintf(__VA_ARGS__)
+#define véefskenef(...) vfscanf(__VA_ARGS__)
+#define véprintef(...) vprintf(__VA_ARGS__)
+#define véskenf(...) vscanf(__VA_ARGS__)
+#define véesprintef(...) vsnprintf(__VA_ARGS__)
+#define véesprintef(...) vsprintf(__VA_ARGS__)
+#define véesskenf(...) vsscanf(__VA_ARGS__)
+
+// TODO: dodělat
+
+#define efgetssí(x) fgetc(x)
 #define sdostaňř(x, y, z) fgets(x, y, z)
 #define spoložz(x, y) fputc(x, y)
 #define spoložř(x, y) fputs(x, y)
@@ -477,3 +462,5 @@
 
 #define mapa map
 #define pár pair
+
+#endif
