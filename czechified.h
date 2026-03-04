@@ -149,101 +149,97 @@
 #define véesprintef(...) vsprintf(__VA_ARGS__)
 #define véesskenf(...) vsscanf(__VA_ARGS__)
 
-// TODO: dodělat
-
 #define efgetssí(x) fgetc(x)
-#define sdostaňř(x, y, z) fgets(x, y, z)
-#define spoložz(x, y) fputc(x, y)
-#define spoložř(x, y) fputs(x, y)
-#define dostaňz(x) getc(x)
-#define dostaňznak(x) getchar(x)
-#define dostaňř(x) gets(x)
-#define položz(x, y) putc(x, y)
-#define položznak(x) putchar(x)
-#define položř(x) puts(x)
-#define oddostaňz(x, y) ungetc(x, y)
-#define spřečti(x, y, z, a) fread(x, y, z, a)
-#define szapiš(x, y, z, a) fwrite(x, y, z, a)
-#define sdostaňpoz(x, y) fgetpos(x, y)
-#define snajdi(x, y, z) fseek(x, y, z)
-#define snastavpoz(x, y) fsetpos(x, y)
-#define sřekni(x) ftell(x)
-#define přetoč(x) rewind(x)
-#define vyčistichyb(x) clearerr(x)
-#define sks(x) feof(x)
-#define schyba(x) ferror(x)
-#define tchybu(x) perror(x)
+#define efgets(x, y, z) fgets(x, y, z)
+#define efputsí(x, y) fputc(x, y)
+#define efputs(x, y) fputs(x, y)
+#define getsí(x) getc(x)
+#define getes(x) gets(x)
+#define putsí(x, y) putc(x, y)
+#define putes(x) puts(x)
+#define angetsí(x, y) ungetc(x, y)
+#define efríd(x, y, z, a) fread(x, y, z, a)
+#define efwrajt(x, y, z, a) fwrite(x, y, z, a)
+#define efgetpos(x, y) fgetpos(x, y)
+#define efsík(x, y, z) fseek(x, y, z)
+#define efsetpos(x, y) fsetpos(x, y)
+#define eftell(x) ftell(x)
+#define ríwajnd(x) rewind(x)
+#define klírerr(x) clearerr(x)
+#define efeoef(x) feof(x)
+#define eferror(x) ferror(x)
+#define píerror(x) perror(x)
 
 
 // <string.h> - <retezec.h>
-#define pamzkop(...) memccpy(__VA_ARGS__)
-#define pamzna(...) memchr(__VA_ARGS__)
-#define pampor(...) memcmp(__VA_ARGS__)
-#define pamkop(...) memcpy(__VA_ARGS__)
-#define pampřesuň(...) memmove(__VA_ARGS__)
-#define pamnastav(...) memset(__VA_ARGS__)
+#define memsísípíy(...) memccpy(__VA_ARGS__)
+#define memsíempí(...) memcmp(__VA_ARGS__)
+#define memsípíy(...) memcpy(__VA_ARGS__)
+#define memmův(...) memmove(__VA_ARGS__)
+
 // ŘEtězcový Ukazatel KOPíruj
-#define řeukop(...) stpcpy(__VA_ARGS__)
-#define řeučkop(...) stpncpy(__VA_ARGS__)
-#define řeťpoj(...) strcat(__VA_ARGS__)
-#define řeťzna(...) strchr(__VA_ARGS__)
-#define řeťpor(...) strcmp(__VA_ARGS__)
+#define estýpísípíý(...) stpcpy(__VA_ARGS__)
+#define estýpíensípíy(...) stpncpy(__VA_ARGS__)
+#define estéerket(...) strcat(__VA_ARGS__)
+#define estéerchr(...) strchr(__VA_ARGS__)
+#define estéercíempí(...) strcmp(__VA_ARGS__)
 // strcoll znamená STRing COLLate
-#define řeťřaď(...) strcoll(__VA_ARGS__)
+#define estéerkoll(...) strcoll(__VA_ARGS__)
 // _l znamená lokalizace
-#define řeťřaď_l(...) strcoll_l(__VA_ARGS__)
-#define řeťkop(...) strcpy(__VA_ARGS__)
+#define estéerkoll_el(...) strcoll_l(__VA_ARGS__)
+#define estéersípíy(...) strcpy(__VA_ARGS__)
 // ŘEŤezcový Doplňkový RoZSaH (fonetický zápis řetězce)
 // STRing Complemetary SPaN
-#define řeťdrzsh(...) strcspn(__VA_ARGS__)
-#define řeťzdv(...) strdup(__VA_ARGS__)
-#define řeťchyba(...) strerror(__VA_ARGS__)
-#define řeťchyba_l(...) strerror_l(__VA_ARGS__)
+#define estýersíespíen(...) strcspn(__VA_ARGS__)
+#define estýerap(...) strdup(__VA_ARGS__)
+#define estýererror(...) strerror(__VA_ARGS__)
+#define estýererror_el(...) strerror_l(__VA_ARGS__)
 // Upřímně netuším, co to _r má být za slovo
-#define řeťchyba_r(...) strerror_r(__VA_ARGS__)
-#define řeťdél(...) strlen(__VA_ARGS__)
-#define řeťčpoj(...) strncat(__VA_ARGS__)
-#define řeťčpor(...) strncmp(__VA_ARGS__)
-#define řeťčkop(...) strncpy(__VA_ARGS__)
-#define řeťčzdv(...) strndup(__VA_ARGS__)
-#define řeťčdél(...) strnlen(__VA_ARGS__)
+#define estýererror_er(...) strerror_r(__VA_ARGS__)
+#define estýerlen(...) strlen(__VA_ARGS__)
+#define estýerket(...) strncat(__VA_ARGS__)
+#define estýersíempí(...) strncmp(__VA_ARGS__)
+#define estýersípíy(...) strncpy(__VA_ARGS__)
+#define estýerendéap(...) strndup(__VA_ARGS__)
+#define estýerenlen(...) strnlen(__VA_ARGS__)
 //STRing Pointer BReaK - ŘEŤezcový Ukazatel ZLoM
-#define řeťuzlm(...) strpbrk(__VA_ARGS__)
+#define estýerpíbíerká(...) strpbrk(__VA_ARGS__)
 //string reverse char - řetězcový zpětný znal
-#define řeťzzna(...) strrchr(__VA_ARGS__)
-#define řeťznamení(...) strsignal(__VA_ARGS__)
-#define řeťrzsh(...) strspn(__VA_ARGS__)
-#define řeťřeť(...) strstr(__VA_ARGS__)
-#define řeťžet(...) strtok(__VA_ARGS__)
+#define estýererchr(...) strrchr(__VA_ARGS__)
+#define estýersignal(...) strsignal(__VA_ARGS__)
+#define estýerespíen(...) strspn(__VA_ARGS__)
+#define estýerestýer(...) strstr(__VA_ARGS__)
+#define estýertok(...) strtok(__VA_ARGS__)
 // _r -> reentrant -> znovuvstupující
-#define řeťžet_z(...) strtok_r(__VA_ARGS__)
+#define estýertok_z(...) strtok_r(__VA_ARGS__)
 // xfrm je zřejmě divná zkratka z transform
-#define řeťzměň(...) strxfrm(__VA_ARGS__)
-#define řeťzměň_l(...) strcfrm_l(__VA_ARGS__)
+#define estýerexefarem(...) strxfrm(__VA_ARGS__)
+#define estýersíefarem_l(...) strcfrm_l(__VA_ARGS__)
 
 // <ctype.h> - <ztyp.h>
-#define jealnum(x) isalnum(x)
-#define jealfa(x) isalpha(x)
-#define jekntrl(x) iscntrl(x)
-#define ječíslice(x) isdigit(x)
-#define jegraf(x) isgraph(x)
-#define jemalý(x) islower(x)
-#define jenižší(x) islower(x)
-#define jetisk(x) isprint(x)
-#define jeinterp(x) ispunct(x)
-#define jemezera(x) isspace(x)
-#define jevelký(x) isupper(x)
-#define jevyšší(x) isupper(x)
+#define isalnam(x) isalnum(x)
+#define isalfa(x) isalpha(x)
+#define issíentýerel(x) iscntrl(x)
+#define isdidžit(x) isdigit(x)
+#define isgraf(x) isgraph(x)
+#define islouer(x) islower(x)
+#define ispankt(x) ispunct(x)
+#define isspejs(x) isspace(x)
+#define isapper(x) isupper(x)
+
 // je Šestnáctková číslice
-#define ješčíslice(x) isxdigit(x)
-#define donižší(x) tolower(x)
-#define dovyšší(x) toupper(x)
+#define isexdidžit(x) isxdigit(x)
+#define tůlouer(x) tolower(x)
+#define tůapper(x) toupper(x)
 
 // <float.h> - <plav.h>
-#define PLV_SOUSTAVA FLT_RADIX
-#define PLV_UDRŽ_ČÍS FLT_MANT_DIG
-#define DVJ_UDRŽ_ČÍS DBL_MANT_DIG
-#define DDVJ_UDRŽ_ČÍS LDBL_MANT_DIG
+#define EFELTÉ_RADIKS FLT_RADIX
+#define EFELTÉ_MENT_DIG FLT_MANT_DIG
+#define DÝBÝEL_MANT_DIG DBL_MANT_DIG
+#define ELDÝBÝEL_MANT_DIG LDBL_MANT_DIG
+
+// TODO: Dokončit
+
 #define DESÍTKOVÝCH_ČÍS DECIMAL_DIG
 #define PLV_ČÍS FLT_DIG
 #define DVJ_ČÍS DBL_DIG
