@@ -4,6 +4,8 @@
 
 // Vše co se vyslovuje tak jak se to píše zůstává beze změny
 
+#define mejn(...) main(__VA_ARGS__)
+
 // Typy
 #define FAJL FILE
 #define flout float
