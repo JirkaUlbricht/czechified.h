@@ -237,182 +237,185 @@
 #define EFELTÉ_MENT_DIG FLT_MANT_DIG
 #define DÝBÝEL_MANT_DIG DBL_MANT_DIG
 #define ELDÝBÝEL_MANT_DIG LDBL_MANT_DIG
-
-// TODO: Dokončit
-
-#define DESÍTKOVÝCH_ČÍS DECIMAL_DIG
-#define PLV_ČÍS FLT_DIG
-#define DVJ_ČÍS DBL_DIG
-#define DDVJ_ČÍS LDBL_DIG
-#define PLV_MIN_MOC FLT_MIN_EXP
-#define DVJ_MIN_MOC DBL_MIN_EXP
-#define DDVJ_MIN_MOC LDBL_MIN_EXP
-#define PLV_MIN_10_MOC FLT_MIN_10_EXP
-#define DVJ_MIN_10_MOC DBL_MIN_10_EXP
-#define DDVJ_MIN_10_MOC LDBL_MIN_10_EXP
-#define PLV_MAX_MOC FLT_MAX_EXP
-#define DVJ_MAX_MOC DBL_MAX_EXP
-#define DDVJ_MAX_MOC LDBL_MAX_EXP
-#define PLV_MAX_10_MOC FLT_MAX_10_EXP
-#define DVJ_MAX_10_MOC DBL_MAX_10_EXP
-#define DDVJ_MAX_10_MOC LDBL_MAX_10_EXP
-#define PLV_MAX FLT_MAX
-#define DVJ_MAX DBL_MAX
-#define DDVJ_MAX LDBL_MAX
-#define PLV_EPSILON FLT_EPSILON
-#define DVJ_EPSILON DBL_EPSILON
-#define DDVJ_EPSILON LDBL_EPSILON
-#define PLV_MIN FLT_MIN
-#define DVJ_MIN DBL_MIN
-#define DDVJ_MIN LDBL_MIN
+#define DESIML_DIG DECIMAL_DIG
+#define EFELTÝ_DIG FLT_DIG
+#define DABL_DIG DBL_DIG
+#define ELDABL_DIG LDBL_DIG
+#define EFELTÝ_MIN_EXP FLT_MIN_EXP
+#define DABL_MIN_EXP DBL_MIN_EXP
+#define ELDABL_MIN_EXP LDBL_MIN_EXP
+#define EFELTÝ_MIN_10_EXP FLT_MIN_10_EXP
+#define DABL_MIN_10_EXP DBL_MIN_10_EXP
+#define ELDABL_MIN_10_EXP LDBL_MIN_10_EXP
+#define EFELTÝ_MAX_EXP FLT_MAX_EXP
+#define DABL_MAX_EXP DBL_MAX_EXP
+#define ELDABL_MAX_EXP LDBL_MAX_EXP
+#define EFELTÝ_MAX_10_MOC FLT_MAX_10_EXP
+#define DABL_MAX_10_MOC DBL_MAX_10_EXP
+#define ELDABL_MAX_10_MOC LDBL_MAX_10_EXP
+#define EFELTÝ_MAX FLT_MAX
+#define DABL_MAX DBL_MAX
+#define ELDABL_MAX LDBL_MAX
+#define EFELTÝ_EPSILON FLT_EPSILON
+#define DABL_EPSILON DBL_EPSILON
+#define ELDABL_EPSILON LDBL_EPSILON
+#define EFELTÝ_MIN FLT_MIN
+#define DABL_MIN DBL_MIN
+#define ELDABL_MIN LDBL_MIN
 
 
 // <math.h> - <matika.h>
-#define plovoucí_t float_t
-#define dvojitý_t double_t
-#define dvojité_t double_t
-#define PLV_VYKON_ZPŮSOB FLT_EVAL_METHOD
-#define pčroztřiď(x) fpclassify(x)
-#define jekonečné(x) isfinite(x)
-#define jevětší(x, y) isgreater(x, y)
-#define jevětšírovno(x, y) isgreaterequal(x, y)
-#define jeneko(x) isinf(x)
-#define jemenší(x, y) isless(x, y)
-#define jemenšírovno(x, y) islessequal(x, y)
-#define jemenšívětší(x, y) islessgreater(x, y)
-#define jeneintýžr(x) isnan(x)
-#define jenormální(x) isnormal(x)
-#define jeneřaditelné(x, y) isunordered(x, y)
-#define znaménkovýbit(x) signbit(x)
-#define znamýnkovýbit(x) signbit(x)
-#define M_2_2ODMPI M_2_SQRTPI
-#define M_2ODM2 M_SQRT2
-#define M_2ODM1_2 M_SQRT1_2
-#define MAXPLOVOUCÍ MAXFLOAT
-#define OBŘÍ_HOD HUGE_VAL
-#define OBŘÍ_HODP HUGE_VALF
-#define OBŘÍ_HODD HUGE_VALL
-#define NEKONEČNO INFINITY
-#define NEINTÝŽR NAN
-#define PČ_NEKONEČNÉ FP_INFINITE
-#define PČ_NEINTÝŽR FP_NAN
-#define PČ_NORMÁLNÍ FP_NORMAL
-#define PČ_PODNORMÁLNÍ FP_SUBNORMAL
-#define PČ_NULA FP_ZERO
-#define PČ_RYCHLÁ_PRS FP_FAST_FMA
-#define PČ_RYCHLÁ_PRSP FP_FAST_FMAF
-#define PČ_RYCHLÁ_PRSD FP_FAST_FMAL
-#define PČ_ČLOGD0 FP_ILOGB0
-#define PČ_ČLOGDNEINTÝŽR FP_ILOGBNAN
-#define MATIKA_CHYBČÍS MATH_ERRNO
-#define MATIKA_CHYBCHYBA MATH_ERREXCEPT
-#define matika_chybzpracování math_errhandling
-#define acosp(x) acosf(x)
-#define acoshp(x) acoshf(x)
-#define acoshd(x) acoshl(x)
-#define acosd(x) acosl(x)
-#define asinp(x) asinf(x)
-#define asinhp(x) asinhf(x)
-#define asinhd(x) asinhl(x)
-#define asind(x) asinl(x)
-#define atan2p(x, y) atan2f(x, y)
-#define atan2d(x, y) atan2l(x, y)
-#define atanp(x) atanf(x)
-#define atanhp(x) atanhf(x)
-#define atanhd(x) atanhl(x)
-#define atand(x) atanl(x)
-#define třod(x) cbrt(x)
-#define třodp(x) cbrtf(x)
-#define třodd(x) cbrtl(x)
-#define strop(x) ceil(x)
-#define stropp(x) ceilf(x)
-#define stropd(x) ceill(x)
-#define zaokrouhlinahoru(x) ceil(x)
-#define zaokrouhlinahorup(x) ceilf(x)
-#define zaokrouhlinahorud(x) ceill(x)
-#define kopírujznaménko(x, y) copysign(x, y)
-#define kopírujznaménkop(x, y) copysignf(x, y)
-#define kopírujznaménkod(x, y) copysignl(x, y)
-#define cosp(x) cosf(x)
-#define coshp(x) coshf(x)
-#define coshd(x) coshl(x)
-#define cosd(x) cosl(x)
-#define chf(x) erf(x)
-#define chfp(x) erff(x)
-// TODO: We can not map multiple tokens to the same one so this needs to be redefined
-// #define chfd(x) erfl(x)
-// #define chfd(x) erfc(x)
-#define chfdp(x) erfcf(x)
-#define chfdd(x) erfcl(x)
-#define moc(x) exp(x)
-#define mocp(x) expf(x)
-#define mocd(x) expl(x)
-#define moc2(x) exp2(x)
-#define moc2p(x) exp2f(x)
-#define moc2d(x) exp2l(x)
-#define mocm1(x) expm1(x)
-#define mocm1p(x) expm1f(x)
-#define mocm1d(x) expm1l(x)
-#define pabs(x) fabs(x)
-#define pabsp(x) fabsf(x)
-#define pabsd(x) fabsl(x)
-#define prom(x) fdim(x)
-#define promp(x) fdimf(x)
-#define promd(x) fdiml(x)
-#define podlaha(x) floor(x)
-#define zaokrouhlidolů(x) floor(x)
-#define podlahap(x) floorf(x)
-#define podlahad(x) floorl(x)
-#define zaokrouhlidolůp(x) floorf(x)
-#define zaokrouhlidolůd(x) floorl(x)
-#define prs(...) fma(__VA_ARGS__)
-#define prsp(...) fmaf(__VA_ARGS__)
-#define prsd(...) fmal(__VA_ARGS__)
-#define pmax(x, y) fmax(x, y)
-#define pmaxp(x, y) fmaxf(x, y)
-#define pmaxd(x, y) fmaxl(x, y)
-#define pmin(x, y) fmin(x, y)
-#define pminp(x, y) fminf(x, y)
-#define pmind(x, y) fminl(x, y)
-#define pzby(x, y) fmod(x, y)
-#define pzbyp(x, y) fmodf(x, y)
-#define pzbyd(x, y) fmodl(x, y)
+#define flout_tý float_t
+#define dabl_tý double_t
+#define EFELTÝ_EVAL_METD FLT_EVAL_METHOD
+#define efpíklesifáj(x) fpclassify(x)
+#define isfajnajt(x) isfinite(x)
+#define isgrejtr(x, y) isgreater(x, y)
+#define isgrejtríkvl(x, y) isgreaterequal(x, y)
+#define isíenef(x) isinf(x)
+#define isles(x, y) isless(x, y)
+#define islesíkvl(x, y) islessequal(x, y)
+#define islesgrejtr(x, y) islessgreater(x, y)
+#define isnen(x) isnan(x)
+#define isnorml(x) isnormal(x)
+#define isanordrd(x, y) isunordered(x, y)
+#define sajnbit(x) signbit(x)
+#define M_2_ESKJŮERTÝPÍ M_2_SQRTPI
+#define M_ESKJŮERTÝ2 M_SQRT2
+#define M_ESKJŮERTÝ1_2 M_SQRT1_2
+#define MAXFLOUT MAXFLOAT
+#define HJŮDŽ_VAL HUGE_VAL
+#define HJŮDŽ_VALEF HUGE_VALF
+#define HJŮDŽ_VALEL HUGE_VALL
+#define NEN NAN
+#define EFPÝ_INFINIT FP_INFINITE
+#define EFPÝ_NEN FP_NAN
+#define EFPÝ_NORML FP_NORMAL
+#define EFPÝ_SABNORML FP_SUBNORMAL
+#define EFPÝ_ZÍROU FP_ZERO
+#define EFPÝ_FAST_EFEMEJ FP_FAST_FMA
+#define EFPÝ_FAST_EFEMEJEF FP_FAST_FMAF
+#define EFPÝ_FAST_EFEMEJEL FP_FAST_FMAL
+#define EFPÝ_ÁJLOGBÝ0 FP_ILOGB0
+#define EFPÝ_ÁJLOGBÝNEN FP_ILOGBNAN
+#define MÁF_ERRNO MATH_ERRNO
+#define MÁF_ERREKSEPT MATH_ERREXCEPT
+#define máf_errhendling math_errhandling
+#define akosef(x) acosf(x)
+#define akosháef(x) acoshf(x)
+#define akosháel(x) acoshl(x)
+#define akosel(x) acosl(x)
+#define asíenef(x) asinf(x)
+#define asíenhef(x) asinhf(x)
+#define asinhel(x) asinhl(x)
+#define asinel(x) asinl(x)
+#define aten2f(x, y) atan2f(x, y)
+#define aten2l(x, y) atan2l(x, y)
+#define atenf(x) atanf(x)
+#define atenhef(x) atanhf(x)
+#define atenhel(x) atanhl(x)
+#define atenel(x) atanl(x)
+#define cýbýertý(x) cbrt(x)
+#define cýbýertýef(x) cbrtf(x)
+#define cýbýertýel(x) cbrtl(x)
+#define síl(x) ceil(x)
+#define sílef(x) ceilf(x)
+#define sílel(x) ceill(x)
+#define kopysajn(x, y) copysign(x, y)
+#define kopysajnf(x, y) copysignf(x, y)
+#define kopysajnel(x, y) copysignl(x, y)
+#define kosef(x) cosf(x)
+#define koshef(x) coshf(x)
+#define koshel(x) coshl(x)
+#define kosel(x) cosl(x)
+#define íeref(x) erf(x)
+#define íerefef(x) erff(x)
+#define íerefsíef(x) erfcf(x)
+#define íefefsíel(x) erfcl(x)
+#define ekspí(x) exp(x)
+#define ekspíef(x) expf(x)
+#define ekspíel(x) expl(x)
+#define ekspí2(x) exp2(x)
+#define ekspí2ef(x) exp2f(x)
+#define ekspí2el(x) exp2l(x)
+#define ekspíem1(x) expm1(x)
+#define ekspí1ef(x) expm1f(x)
+#define ekspí1el(x) expm1l(x)
+#define fabes(x) fabs(x)
+#define fabesef(x) fabsf(x)
+#define fabesel(x) fabsl(x)
+#define efdim(x) fdim(x)
+#define efdimef(x) fdimf(x)
+#define efdimel(x) fdiml(x)
+#define flór(x) floor(x)
+#define flóref(x) floorf(x)
+#define flórel(x) floorl(x)
+#define efemej(...) fma(__VA_ARGS__)
+#define efemejef(...) fmaf(__VA_ARGS__) // Was that the bite of 87
+/*
+⣿⣿⣿⣽⣿⣿⣯⣿⣿⣯⣿⣿⣿⣽⣿⣿⣯⣿⣿⢿⣽⣿⣿⣽⣿⣟⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⢿⡿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣻⣿⣿⣻⣿⣿⡻⣿⣟⡿⣽⣿⡽⣯⣿⡾⣯⣿⣟⣟⣿⣷⣿⣽⣾⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⡷⣟⣿⣟⣯⢿⣿⡿⣝⣿⣷⣟⣞⣿⡾⣝⣿⣿⣞⣽⣿⣯⣯⣿
+⣾⣿⣷⣷⣿⣿⢿⣻⣿⣿⣿⣽⣿⣷⣿⣿⣷⡿⣯⣷⣿⣿⣾⢿⣽⣾⣿⣿⢿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣟⣯⣿⣻⣿⣻⣿⣻⣿⡷⣿⣟⣿⣿⣿⣿⣿⣽⣿⣟⣿⣟⣿
+⣯⣿⣿⢽⣻⣿⣻⣻⣿⣞⣷⣿⣟⡾⣿⣞⣗⣿⣿⣿⣾⣷⣿⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣻⣽⡿⣾⣿⣼⣿⢿⣮⣷⣿⣟⣾⣿⣷⣽⣾⣿⣞⣾⣿⣿⣾⣽
+⢿⣻⣿⣿⣿⣿⡿⣿⣟⣿⢿⣾⢿⣿⣻⣟⣿⣿⣿⣯⣿⡷⣟⣿⢿⣿⣽⣯⣿⣿⣽⣿⢿⣽⣯⣿⡿⣿⢿⣿⣿⣿⣿⣿⡿⣷⣟⣿⣟⣯⣿⣯⣿⣻⣽⣯⣿⣽⣿⣻⢿⣯⣿⣽⣿
+⣽⣿⣿⣞⣾⣿⣽⣽⣿⣽⣽⣿⣟⣾⣻⡿⣽⣿⣿⡿⣞⣿⣿⣿⢿⣟⣿⣻⡽⡯⣟⡾⣻⢽⢞⡮⡯⣺⢽⢽⢿⣿⣿⣷⣿⡿⣾⢿⣿⣮⣿⡿⣾⣾⣿⣷⣷⣿⣿⣾⣽⣿⣿⣮⣿
+⣿⣟⣿⣿⡿⣿⣻⣿⣻⣟⣯⣿⣟⣿⣟⣾⣿⣿⣽⣿⡿⣟⣿⡺⡹⡸⢸⠸⡘⡎⡮⡺⣘⢎⢗⣝⢮⢏⡯⣫⢯⢿⣿⣟⣯⣟⢿⣿⣷⡻⣷⣿⣟⢷⣿⡯⡿⣽⣷⣟⢿⣿⣯⢿⢿
+⡿⣿⣻⣟⣿⣿⢿⡿⣿⢿⣿⢿⡿⣟⣿⣿⣿⣿⣟⣷⡿⣿⡣⡣⡪⡨⡢⡣⡣⡣⡣⣣⢣⡣⣓⢮⡳⣝⣞⢵⢳⢻⣿⣿⡿⣟⣿⣯⣷⣿⢿⣿⢾⣿⣿⢿⣿⣿⣿⣾⣿⣿⢿⣻⣿
+⡿⣟⣿⣟⣿⣾⣿⡿⣿⣟⣿⣟⣿⡿⡿⣿⣿⣿⣿⣻⡿⣽⢣⢓⢌⠆⡎⣪⡸⣸⣸⢸⡸⡜⡜⡮⡺⣕⣗⣽⡹⡪⣾⣿⣻⢯⣳⣿⣟⣞⣿⣿⣏⣿⣾⣟⣽⣿⡷⣏⣿⣿⣟⣟⣿
+⢿⣿⣟⣯⣿⣷⢿⣟⣿⣽⣯⣿⣯⣿⣻⡺⣿⣿⣿⣯⢿⡳⡑⠥⡱⢕⠫⡣⡫⡫⣪⢳⢕⢝⡜⣎⢯⡺⣕⢯⢻⢳⢽⡿⣽⣿⣟⣿⣽⢿⣽⣷⢿⣯⣿⣟⣿⣾⣿⡿⣿⣟⣿⢿⣿
+⣿⣯⣿⣟⣿⣾⣿⢿⣻⣽⣿⢾⣿⣺⣽⠇⡹⢽⣿⣾⢏⢎⠪⡘⢌⢢⠱⣕⢕⡽⣜⢼⢸⢘⢎⣞⢮⣺⡪⡷⣱⢙⠼⣿⣿⣿⣽⣿⣯⣽⣽⣿⣧⣿⡿⣷⣽⣿⣷⣯⣿⣿⣯⣟⣿
+⢿⣾⢿⣽⡿⣷⡿⣿⡿⣿⣽⣿⣯⣟⣾⡇⢬⣜⣿⣿⢨⢂⠅⠌⡂⢇⢏⠢⣧⡷⣝⢇⢇⠅⣇⢯⢯⣪⣾⢝⡺⣄⢣⣻⣿⣿⣺⣷⡿⡽⣿⣽⢾⣻⣿⣟⣯⣿⣾⢯⣿⣯⡿⣿⣿
+⡿⣟⣿⣟⣿⣟⣿⣟⣿⣿⣽⣾⣟⣷⢿⡅⣿⣻⣿⣿⠰⡡⢊⢐⠌⡢⢊⢎⢪⢪⢣⠣⡑⡱⡸⣪⡳⣕⢯⡣⣳⢱⠡⣾⣿⣟⢞⣿⣻⣾⣿⢿⣷⢿⣿⣾⣾⣿⡿⣷⣿⣿⣿⣾⣿
+⢿⣿⢿⣻⣯⣿⣯⣿⢿⣾⢿⣽⣿⣯⢿⡳⣿⣿⣿⣿⡑⢌⠢⡂⢕⠨⢢⢑⢕⠥⡑⢅⠪⡨⢺⡸⢜⣎⢮⢺⡸⡸⢘⣿⣿⠇⣿⣿⣯⡳⣿⣿⣝⣿⣿⡽⣾⣿⣟⢿⣻⣷⡿⣾⣿
+⡿⣿⡿⣿⣿⣽⣯⣿⣿⣻⣿⣟⣷⣿⣿⣻⣿⣿⣿⣿⢌⠢⡑⢌⢢⢑⢅⢣⠪⡪⡨⢢⠱⡘⡜⡼⣜⢼⢸⢕⠕⢌⢸⣿⣿⣝⣿⣾⡷⣿⣿⡿⣾⣻⣽⣿⣯⣿⣿⣻⣿⣟⣿⣾⣿
+⣿⡿⣟⣿⣾⣿⣽⣷⣿⢿⣽⣿⣻⣿⣿⣿⣿⡿⣟⣿⡸⡨⡊⡌⢆⠕⡌⢆⢇⢣⠪⡢⣱⡘⣜⢜⡬⡪⡣⡇⡫⡐⣸⣿⣿⣪⣯⣷⣿⣹⣽⣿⣭⣿⣿⣓⣿⣿⣞⡯⣿⣿⣝⣿⣯
+⢿⣿⡿⣿⣟⣟⣟⣟⣟⡿⣻⣻⣻⣫⢗⣯⣷⡻⣻⡯⣎⢎⢆⢎⢢⠱⡘⡌⢆⢣⠱⡩⡣⣣⣗⣝⢎⢇⢇⢇⢕⢔⢿⣯⣿⢽⢿⣽⡯⣿⢿⣽⢿⣾⣿⣻⣷⣿⣟⣿⣿⣿⣻⣽⣿
+⣿⢿⣻⢻⡺⡮⡯⡯⣗⣟⣞⣞⡾⣮⡣⣷⣳⢝⣽⡗⡽⣜⢢⢣⠣⡣⡱⡘⡌⢎⡪⣎⢯⢷⣻⣞⣧⢣⢱⢱⢱⣽⣾⢷⡿⣷⡿⣿⣻⣾⣿⡿⣾⣾⣿⣮⣿⣯⣷⣽⣿⣽⣾⣽⣿
+⢜⢎⢮⢺⡺⣝⢽⣝⣞⡾⣺⢾⢽⣺⡪⡾⡽⣕⣯⢿⢸⢜⢮⢪⢕⢕⢜⢌⢎⢧⢫⣪⣾⣷⣷⡷⡮⣳⢱⣹⡽⣾⡽⣯⢿⢼⣞⡿⣽⡺⣷⣿⢻⣽⣷⠿⣷⣿⣻⢷⣿⡿⣽⣿⣿
+⡪⡺⡸⡵⣝⢮⣳⡳⣳⢯⣟⡽⡯⡾⣕⢽⢽⣳⢽⡯⡇⣏⣗⡵⣣⢳⢱⢱⢱⣫⣿⣻⡽⣾⢯⣟⢽⡪⣞⣾⢯⣷⣿⢽⣽⣻⣺⣽⣳⡯⣟⡾⡯⣟⣟⢿⣻⣿⡷⣷⣿⣿⣷⢿⣾
+⢪⡣⣏⢞⢼⢕⢧⢯⣳⡻⣮⣻⢽⢽⡺⡜⣽⢮⣻⡽⣇⢇⣗⢽⡸⡕⡕⡕⡕⡎⡾⣺⡽⣽⡳⣕⢧⢯⣿⢯⣿⣺⣯⣟⣾⣺⣗⣿⣺⡽⣯⢿⡽⣟⡮⣗⣝⠿⣝⢿⣿⣷⡻⣿⣿
+⡱⡕⣕⢏⡗⣝⢵⡫⡮⡯⣞⢾⢯⣟⡮⡳⣹⢵⠵⡿⣕⣗⢼⢵⡝⣞⡜⡜⡜⡜⣎⢷⢝⣗⣽⡺⣝⣿⢯⣟⣞⣗⣿⣺⣞⢷⣽⣺⣳⣟⣽⡽⣽⢯⢯⣗⣗⡯⣚⣿⣯⣷⣿⣿⣿
+⢜⢮⡪⣳⢹⢜⢵⢝⢮⡳⣝⢽⢽⢾⢽⣚⢮⡳⡹⣽⣗⡧⣳⢝⡽⣞⡾⡸⣜⢜⡜⡽⣽⣳⣳⢽⣻⣽⣻⣞⣗⡯⣿⣺⣺⡽⣞⣾⡳⣯⢾⢽⡽⡽⣽⣺⣺⣝⢲⢸⢿⣟⣮⣿⣿
+⡪⡮⡺⡸⣕⢽⡱⣝⢵⢝⢼⡹⡽⡽⡯⣗⣗⣝⢼⠵⣷⣻⢵⣏⢯⢷⣿⡽⣮⢷⣽⡽⣞⣾⣾⡿⣟⣾⣳⣳⣳⣻⣟⣞⣗⡿⣽⣺⢽⡳⣯⣻⡺⣝⣗⣗⢷⢝⢼⢵⢙⣟⣿⣿⣽
+⡪⡺⡜⣝⢜⢮⡺⣪⡳⣝⢕⡗⡵⡫⡯⣟⣾⣺⡪⣏⢞⣽⣳⡽⡽⣵⡳⣻⡻⣟⡷⣿⢿⢿⢽⢯⣟⣞⣞⣞⡾⣺⣷⣻⣺⢽⡳⡽⡽⣝⣞⢮⢞⡵⡷⡽⣝⡭⡯⡯⣎⢎⣶⣿⣿
+⢜⡕⣝⢜⢎⢧⡫⡮⡺⣪⡳⡝⡮⣫⡺⣝⢾⣺⣽⣺⣕⢗⢯⣻⣺⡪⣻⣺⣺⡳⣽⡺⣝⢽⣝⡵⣗⡷⣳⢗⣟⣽⣞⣞⢮⣻⢺⢝⡞⣮⡺⣕⢯⡺⣽⡺⣕⡯⣟⣽⢪⣞⢼⣿⣿
+⢪⢎⢮⢪⢳⡱⡣⣏⢞⣕⢗⣝⢞⢮⡺⣜⢵⢝⣞⡷⣽⢽⣝⣞⢷⣝⡜⣞⢮⡺⡵⣝⣞⢷⣳⢯⢗⡯⣏⡯⣞⣾⡣⣗⢽⡪⣏⢗⣝⡞⣞⢮⡪⣟⣞⢮⣳⣻⢽⣺⡽⡪⡒⣿⢿
+⣳⢹⢸⢪⢣⢳⡹⣜⢕⡗⣝⢮⡫⡧⣫⡺⣪⡳⣕⢽⢝⣟⣾⣺⣽⣺⣜⢮⡳⣕⢯⢾⣺⢯⡺⣝⢵⡫⣞⢮⣳⣟⢮⡳⣝⡞⡮⣳⢕⣯⡺⣕⢝⣞⡮⣳⡽⣞⡯⣗⣵⡣⡳⣽⣿
+⢮⡷⣕⡇⣏⢮⢺⡸⣕⣝⢮⡳⣝⢮⡳⣝⢮⡺⣪⡳⡝⣞⢮⢗⡷⣗⣯⢷⢽⣪⢯⣻⣪⡳⣝⢮⡳⣝⢮⣳⢽⡾⣵⣻⢮⡺⣝⢮⢯⣺⡺⣪⣫⢷⢝⣷⣫⣗⡯⣗⡷⡽⡫⢺⣿
+⢿⣟⢯⣟⣷⣻⣞⣾⣼⢼⣵⣹⡪⣗⡽⣺⢵⡻⣪⢞⣝⢮⡺⣕⢯⡳⣫⣟⡯⣯⣗⡷⡵⣝⣮⡳⣝⢮⣳⢳⣟⡿⣻⣽⣳⣝⣗⢽⡳⣵⡻⣜⢾⡽⣝⡮⣞⢮⢯⡳⣏⣗⢕⠝⣿
+⣟⡿⣵⡹⡳⡿⣽⡾⣯⣿⢾⣯⣿⣻⣾⢷⡿⣾⣽⣳⣳⣽⣪⣗⢽⡪⣗⡵⣫⢗⣗⢯⣻⣳⡳⡯⣗⡯⣞⣗⣯⢯⢯⣺⣳⣳⣳⣫⣞⣗⣯⣺⢽⣻⢎⡯⣺⢝⣗⢯⣗⡗⣇⢏⢺
+⣿⣯⡺⣳⣝⡜⣎⢮⡫⣞⢯⢗⡿⣽⢾⡿⣿⣻⣽⣿⣻⣽⡿⣾⣿⣻⣷⣻⣾⣵⣗⣯⣞⣞⣞⡽⡵⣯⣳⣻⣞⢽⣺⣺⣺⣺⡺⣺⣺⣺⣞⣞⣿⡳⣝⢮⣳⡫⣞⣽⣺⣺⡪⡎⢾
+⣟⢾⣳⢝⢷⡿⣮⡧⣏⣞⢮⡳⣝⢾⢵⢯⢗⡯⡯⣞⡯⣟⣽⣻⢽⡯⣿⢽⡾⣷⣟⣷⣟⣷⣟⣿⣻⣷⣻⡾⣯⡿⣾⢾⣾⣾⣽⣷⣿⣷⣿⣯⡷⣝⢼⢕⡧⣻⢺⣺⣺⣺⡺⡜⡕
+*/
+#define efmal(...) fmal(__VA_ARGS__)
+#define efmax(x, y) fmax(x, y)
+#define efmaxef(x, y) fmaxf(x, y)
+#define efmaxel(x, y) fmaxl(x, y)
+#define efmin(x, y) fmin(x, y)
+#define efminef(x, y) fminf(x, y)
+#define efminel(x, y) fminl(x, y)
+#define efmod(x, y) fmod(x, y)
+#define efmodef(x, y) fmodf(x, y)
+#define efmodel(x, y) fmodl(x, y)
 
 // <signal.h> - <signál.h>
-#define zabít() kill()
-#define zabij() kill()
-#define usmrtit() kill()
-#define usmrť() kill()
-#define skolit() kill()
-#define skol() kill()
-#define utratit() kill()
-#define utrať() kill()
-#define porazit() kill()
-#define poraž() kill()
-#define potratit() kill()
-#define potrať() kill()
-#define zakroutit_krkem() kill()
-#define zakruť_krkem() kill()
-#define odkráglovat() kill()
-#define odkrágluj() kill()
-#define signál() signal()
+#define kil() kill()
+#define signl() signal()
 
 // čísla signálů (vizte kill -l nebo signum-generic.h)
-#define SIGPŘE  SIGINT   // signál přerušení
-#define SIGNEZ  SIGILL   // signál nezákonný
-#define SIGPOTR SIGABRT  // signál potrat
-#define SIGPŘCH SIGFPE   // signál plovoucí řádová chyba
-#define SIGDÍLP SIGSEGV  // signál díl porušení (segment violation)
-#define SIGÚSP  SIGSEGV  // signál úsek porušení
-#define SIGUKO  SIGTERM  // signál ukončit
-#define SIGZAV  SIGHUP   // signál zavěsit
-#define SIGODE  SIGQUIT  // signál odejít
-#define SIGPAST SIGTRAP  // signál past
-#define SIGZAB  SIGKILL  // signál zabít
-#define SIGTRUB SIGPIPE  // signál trubka
-#define SIGROUR SIGPIPE  // signál roura
-#define SIGBUD  SIGALRM  // signál budík
-#define SIGPOPL SIGALRM  // signál poplach
+#define SIGINTÝŽR  SIGINT   // signál přerušení
+#define SIGILÍGL  SIGILL   // signál nezákonný
+#define SIGEJBÝÁRTÝ SIGABRT  // signál potrat
+#define SIGEFPÍÍ SIGFPE   // signál plovoucí řádová chyba
+#define SIGSÍGVÍ SIGSEGV  // signál díl porušení (segment violation)
+#define SIGÍGVÍ  SIGSEGV  // signál úsek porušení
+#define SIGTERMINEJT  SIGTERM  // signál ukončit
+#define SIGHAP  SIGHUP   // signál zavěsit
+#define SIGKVIT  SIGQUIT  // signál odejít
+#define SIGTREP SIGTRAP  // signál past
+#define SIGKIL  SIGKILL  // signál zabít
+#define SIGPAJP SIGPIPE  // signál trubka
+#define SIGEJELEM  SIGALRM  // signál budík
 
 /*
    ▀█▄▄█▀
@@ -425,38 +428,17 @@
     ▀▀▀▀
 */
 // c -> character -> znak -> z
-#define zven cout
-#define zvýstup cout
-#define zdovnitř cin
-#define zvstup cin
-#define zdo cin
-#define zerr cerr
-#define zchyb cerr
+#define síaut cout
+#define síin cin
+#define síer cerr
 
-#define cven cout
-#define cvýstup cout
-#define cdovnitř cin
-#define cvstup cin
-#define cdo cin
-#define cchyb cerr
-
-#define používá using
-#define jménovesmír namespace
-#define jmennýprostor namespace
+#define jůsing using
+#define nejmspejs namespace
 // std -> sexually transmitted disease -> Sexuálně přenosná nemoc -> spn
-#define spn std
-// STandarD -> STandardnÍ
-#define stí std
-
-#define vektor vector
-#define zatlač_zpátky push_back
-#define zatlač_zpět push_back
-#define zatlač_dozadu push_back
-#define strč_zpátky push_back
-#define strč_zpět push_back
-#define strč_dozadu push_back
-
-#define mapa map
-#define pár pair
+#define estýdý std
+#define vektr vector
+#define puš_bek push_back
+#define mep map
+#define pér pair
 
 #endif
