@@ -141,13 +141,13 @@
 #define esprintef(...) snprintf(__VA_ARGS__)
 #define esskenef(...) sscanf(__VA_ARGS__)
 // proměnný souborový tisk formátovaný
-#define efprintef(...) vfprintf(__VA_ARGS__)
+#define véefprintef(...) vfprintf(__VA_ARGS__)
 #define véefskenef(...) vfscanf(__VA_ARGS__)
 #define véprintef(...) vprintf(__VA_ARGS__)
-#define véskenf(...) vscanf(__VA_ARGS__)
-#define véesprintef(...) vsnprintf(__VA_ARGS__)
+#define véskenef(...) vscanf(__VA_ARGS__)
+#define véesenprintef(...) vsnprintf(__VA_ARGS__)
 #define véesprintef(...) vsprintf(__VA_ARGS__)
-#define véesskenf(...) vsscanf(__VA_ARGS__)
+#define véesskenef(...) vsscanf(__VA_ARGS__)
 
 #define efgetssí(x) fgetc(x)
 #define efgets(x, y, z) fgets(x, y, z)
