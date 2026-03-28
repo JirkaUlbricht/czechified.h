@@ -63,8 +63,6 @@
 #define tajpdef typedef
 #define semikouln ;
 
-#define hlavní main
-
 // operátory
 #define íkvls ==
 #define notíkvls !=
