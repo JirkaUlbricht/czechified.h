@@ -23,10 +23,10 @@
 #define intýžr16_t int16_t
 #define intýžr32_t int32_t
 #define intýžr64_t int64_t
-#define nintýžr8_t uint8_t
-#define nintýžr16_t uint16_t
-#define nintýžr32_t uint32_t
-#define nintýžr64_t uint64_t
+#define jůintýžr8_t uint8_t
+#define jůintýžr16_t uint16_t
+#define jůintýžr32_t uint32_t
+#define jůintýžr64_t uint64_t
 
 // další datové typy
 #define ínam enum
